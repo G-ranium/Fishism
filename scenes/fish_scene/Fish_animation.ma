@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Fish_animation.ma
-//Last modified: Sat, Mar 21, 2026 01:16:41 PM
+//Last modified: Sat, Mar 21, 2026 05:23:47 PM
 //Codeset: 1252
 file -rdi 1 -ns "Main_Scene" -rfn "Main_SceneRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/Fishism//scenes/Main_Scene.ma";
@@ -43,21 +43,21 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "048B2139-4E77-8311-76B1-A08EAEB8826E";
+fileInfo "UUID" "8A962DBD-4B37-7C53-979C-6CB6862BB10A";
 createNode transform -s -n "persp";
 	rename -uid "B8CF35C1-4F9A-F313-3827-8E82F063D3FD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 50.531602166373773 2138.1075157950522 1891.3575585688418 ;
-	setAttr ".r" -type "double3" -42.338352729323326 -328.99999999976757 1.8552706565369757e-15 ;
+	setAttr ".t" -type "double3" 478.4699694840649 1171.7278174488813 -639.58627967046641 ;
+	setAttr ".r" -type "double3" -28.538352729311573 -238.60000000017305 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "48E85049-41A9-21BD-0FD8-D0AD7491B1A1";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 2743.0231941696547;
+	setAttr ".coi" 1989.112807241921;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -1213.1204373967169 144.42646670341492 65.46664649675256 ;
+	setAttr ".tp" -type "double3" -1178.0873669063017 144.42646670341492 -79.91204878165594 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "E4C04C92-4E97-EE33-F70E-999C0BC84088";
@@ -133,7 +133,7 @@ createNode parentConstraint -n "gun_parentConstraint1" -p "gun";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.3178969244673884 -1.8601216326792436 1.2774821948019479 ;
 	setAttr ".tg[0].tor" -type "double3" 0 184.77567477681424 0 ;
-	setAttr ".lr" -type "double3" 0 -102.33732098841027 0.36567755620482573 ;
+	setAttr ".lr" -type "double3" 0 -145.22458312220465 0 ;
 	setAttr ".rst" -type "double3" -1393.9141875218011 125.83975368424538 17.931819095478915 ;
 	setAttr ".rsrr" -type "double3" 0 -85.224325223185858 0 ;
 	setAttr ".rdta" -type "double3" 0 -1.4874450779350443 0 ;
@@ -1930,7 +1930,7 @@ createNode mesh -n "L_DoorShape" -p "L_Door";
 createNode transform -n "R_Door";
 	rename -uid "D46D0435-42D6-0364-C13C-12B739BD1EEA";
 	setAttr ".rp" -type "double3" -13.18451452255249 6.096799373626709 245.76995849609378 ;
-	setAttr ".rpt" -type "double3" -1.4210854715202004e-13 0 -6.1106675275368616e-12 ;
+	setAttr ".rpt" -type "double3" -2.2737367544323206e-13 0 -6.0538241086760536e-12 ;
 	setAttr ".sp" -type "double3" -13.18451452255249 6.096799373626709 245.76995849609378 ;
 createNode mesh -n "R_DoorShape" -p "R_Door";
 	rename -uid "BC5A6043-4922-27A7-5500-B69B13DCCB01";
@@ -3717,15 +3717,15 @@ createNode mesh -n "R_DoorShape" -p "R_Door";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".dr" 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A7E4A9E9-47D2-4399-BC98-5180958FBC8C";
-	setAttr -s 563 ".lnk";
-	setAttr -s 563 ".slnk";
+	rename -uid "CC18A5B9-4349-AA67-51FA-548C69D1C206";
+	setAttr -s 333 ".lnk";
+	setAttr -s 333 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "CFA25BE1-46CC-C791-98F9-41AC4EACCC95";
+	rename -uid "8C819BAD-4D79-BBF6-9B1C-BE980310D9B8";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "AD311C04-4EB6-0BE7-EE3E-9E852756557B";
+	rename -uid "F87F165D-42F0-F716-632C-938C5E2CAF99";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3198794E-4D4B-C15E-A281-3FA6304BCADF";
+	rename -uid "689B4E3F-4EF9-CE7A-4FC8-6EA210303AD0";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -3733,7 +3733,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "3CB80F0A-4154-6733-AA15-A38F4A38910E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "61CEC68D-4093-93E0-B303-C2AE1BB1A3EF";
+	rename -uid "1A62D9F2-486B-9074-0511-1D937E23ADFD";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B2299D7C-43D7-DD72-2524-59A50E53CAD4";
 	setAttr ".g" yes;
@@ -3743,14 +3743,14 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 515\n            -height 258\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
-		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 515\n            -height 257\n            -sceneRenderFilter 0\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n"
 		+ "            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n"
 		+ "            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n"
 		+ "            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n"
-		+ "            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 515\n            -height 257\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 1\n"
+		+ "            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 1\n"
 		+ "            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n"
 		+ "            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n"
 		+ "            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1237\n            -height 562\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n"
@@ -4070,7 +4070,7 @@ createNode reference -n "Main_SceneRN";
 		2 "|objects|Main_Scene:Walls|Main_Scene:Door_Grp|Main_Scene:Diner_Walls1:L_Door" 
 		"visibility" " 1"
 		2 "|objects|Main_Scene:Walls|Main_Scene:Door_Grp|Main_Scene:Diner_Walls1:L_Door" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 0 1.3059200000000002e-09 0"
 		2 "|objects|Main_Scene:Walls|Main_Scene:Door_Grp|Main_Scene:Diner_Walls1:L_Door" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|objects|Main_Scene:Walls|Main_Scene:Door_Grp|Main_Scene:Diner_Walls1:L_Door" 
@@ -4474,711 +4474,711 @@ createNode reference -n "shelves_stuffRN";
 		"shelves_stuffRN" 708
 		0 "|shelves_stuff:Assorted_Foods" "|objects" "-s -r "
 		2 "shelves_stuff:objects" "displayType" " 0"
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick14.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon83.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich35.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco14.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon85.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick44.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick27.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana9.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat9.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich25.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco25.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon44.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick49.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco23.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick46.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple9.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice32.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick17.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple14.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon34.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon77.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon73.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick23.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco46.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon78.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice14.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice27.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick26.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco35.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon51.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana23.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco50.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich24.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon75.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice19.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich33.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick30.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana17.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco24.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice29.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick39.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick48.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon31.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich2.drawOverride" 
 		""
 		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat1.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco49.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon19.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick12.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco41.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana19.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon80.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon54.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco19.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice9.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco47.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick31.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco31.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon103.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick35.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon87.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco28.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon90.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick22.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon68.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice23.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick56.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco39.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco32.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon9.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco34.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon71.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon62.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon40.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich38.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice13.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon72.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick24.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana13.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon101.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco16.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick54.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon86.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco48.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon106.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick47.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice30.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick29.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco38.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon82.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice2.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon105.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon61.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick52.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick32.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich22.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon96.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon84.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon52.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick38.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon55.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana14.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon13.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon110.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco52.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon58.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon69.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco10.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick9.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon14.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon50.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon27.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick50.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich32.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco22.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich28.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana25.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon97.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple13.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon32.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon74.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon43.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon94.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice12.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick42.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich36.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick10.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich30.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon65.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich27.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice28.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick34.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon112.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick43.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon91.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco13.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon93.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon95.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich23.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon66.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco12.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco27.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple21.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana12.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon108.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick55.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich29.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon59.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco36.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon109.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick40.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon47.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon104.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana22.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco26.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco17.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon38.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco43.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon56.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana18.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon28.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon67.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco33.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon53.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon79.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple17.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice34.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick16.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich13.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana16.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich37.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick28.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich15.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon48.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon64.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco37.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon76.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich39.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon102.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco51.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich1.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon33.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich34.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana4.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat10.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco40.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice26.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice25.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon111.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco42.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon88.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon42.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon81.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon7.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice17.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon16.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco45.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon92.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat6.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat16.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon17.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon24.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple16.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton3.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon100.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick25.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco29.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon12.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice22.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick41.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich31.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich26.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon98.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon46.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon26.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco20.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick33.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple19.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon70.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple10.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco50.drawOverride" 
 		""
 		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana2.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice24.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat7.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon3.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon44.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton7.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice29.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice33.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco44.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick53.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon107.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice5.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick36.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco11.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice31.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich19.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich8.drawOverride" 
-		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon89.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon58.drawOverride" 
 		""
 		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon99.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco53.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat4.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick13.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice14.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick19.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick51.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon53.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick45.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich15.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice16.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich1.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat12.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick29.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat19.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich21.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple12.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon71.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich14.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple13.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich12.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon37.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton2.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick37.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana10.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick33.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon57.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon109.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana24.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco31.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco9.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick49.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco30.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich38.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon101.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick14.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon52.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon104.drawOverride" 
 		""
 		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon63.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich3.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick55.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon38.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice22.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco49.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco30.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich35.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco6.drawOverride" 
 		""
 		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton4.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon23.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana23.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana15.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco4.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon51.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick43.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick45.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon98.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick47.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco40.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon94.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon102.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich37.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick38.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon84.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick15.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon64.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco52.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon2.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich27.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco23.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon79.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon86.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice33.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon72.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon67.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon90.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick36.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick23.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick41.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon77.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice27.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco37.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon74.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon62.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick32.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco47.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich26.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice21.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon24.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich22.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco13.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon33.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon50.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco14.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco48.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice25.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon40.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon32.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon95.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick30.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick26.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice31.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich14.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice13.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon88.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco35.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon108.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon59.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon110.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco17.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco27.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick40.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon61.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana14.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon106.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco32.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat2.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick53.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon37.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich28.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon65.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon100.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon70.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon54.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco24.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice15.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice34.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick27.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich39.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana4.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich24.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon87.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon4.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick24.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick22.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon13.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco36.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana21.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick28.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon75.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich4.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana17.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana25.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon103.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana22.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco46.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon78.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon55.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco41.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick21.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon43.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple4.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick25.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana24.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon48.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon21.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick13.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon46.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco39.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon14.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick52.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich34.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon91.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco43.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco44.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon17.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon89.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice18.drawOverride" 
 		""
 		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice10.drawOverride" 
 		""
-		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich9.drawOverride" 
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco45.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon26.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco21.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick17.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco22.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco29.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick16.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick46.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon105.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon28.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco28.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick54.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich36.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco51.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon69.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon23.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon31.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco15.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice28.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco38.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana10.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick44.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon81.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice4.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice32.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon97.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick31.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich25.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice26.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick10.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice23.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple15.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick34.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple10.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon85.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon80.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon27.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco53.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple14.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick7.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick39.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick35.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon93.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon56.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon112.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich31.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco10.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon68.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon12.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon82.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon96.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice19.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon66.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat10.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick42.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana6.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon47.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon18.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple2.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon34.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick50.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon83.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon92.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich13.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon107.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice9.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice17.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice24.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco42.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick51.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice30.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich23.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco25.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon73.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice2.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich32.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Fish_Skeleton3.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple21.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Deep_Fried_Rat15.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple1.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich30.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco34.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco26.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick37.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon20.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple11.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon111.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon76.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Pizza_Slice5.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco33.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick8.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick56.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich29.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon42.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Drumstick48.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Lemon57.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Taco2.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Sandwich33.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple17.drawOverride" 
+		""
+		3 "shelves_stuff:main_scene_objects.drawInfo" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Banana13.drawOverride" 
 		""
 		5 4 "shelves_stuffRN" "|objects|shelves_stuff:Assorted_Foods|shelves_stuff:Apple.drawOverride" 
 		"shelves_stuffRN.placeHolderList[1]" ""
@@ -6438,1043 +6438,1144 @@ createNode reference -n "AnglerFish_V2RN";
 lockNode -l 1 ;
 createNode animCurveTL -n "_COG_Ctrl_translateX";
 	rename -uid "A4950C94-4696-624D-1668-499204156917";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 105 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 107 0;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "_COG_Ctrl_translateY";
 	rename -uid "411D8333-42DA-4AD0-D0D8-9DB819BC06EE";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 105 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 107 0;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "_COG_Ctrl_translateZ";
 	rename -uid "EFF6B276-4C48-5E03-E0F3-ED86DD242BBB";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 105 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 107 0;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "L_Fin_01_Ctrl_translateX";
 	rename -uid "8A3DA20F-436E-F123-3AF6-10A0C7B8DFEC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "L_Fin_01_Ctrl_translateY";
 	rename -uid "1F95B1AC-4F57-E917-2398-289052827247";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "L_Fin_01_Ctrl_translateZ";
 	rename -uid "94BF052B-4E5E-D805-808E-1E9BC21481ED";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "L_Fin_02_Ctrl_translateX";
 	rename -uid "66568F08-41EE-D25F-B777-20A727BFBC57";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "L_Fin_02_Ctrl_translateY";
 	rename -uid "7D7FC948-41AF-3680-2DAA-0D80256B7068";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "L_Fin_02_Ctrl_translateZ";
 	rename -uid "A24EDFBF-45AE-389D-E6E3-17BCAA415270";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "R_Fin_01_Ctrl_translateX";
 	rename -uid "9EBEE581-4CB8-0228-47AA-B4BF1812693B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 138 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 159 0;
+	setAttr -s 3 ".kot[1:2]"  5 2;
+	setAttr -s 3 ".ktl[0:2]" no no no;
 createNode animCurveTL -n "R_Fin_01_Ctrl_translateY";
 	rename -uid "D7743C2C-4FD9-C750-ECA6-21A25CAB3B59";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 138 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 159 0;
+	setAttr -s 3 ".kot[1:2]"  5 2;
+	setAttr -s 3 ".ktl[0:2]" no no no;
 createNode animCurveTL -n "R_Fin_01_Ctrl_translateZ";
 	rename -uid "ECB0C0E2-4A89-8B9D-DF58-35A5C6A8BC37";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 138 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 159 0;
+	setAttr -s 3 ".kot[1:2]"  5 2;
+	setAttr -s 3 ".ktl[0:2]" no no no;
 createNode animCurveTL -n "R_Fin_02_Ctrl_translateX";
 	rename -uid "8D819E7A-4974-8A8A-9265-86A929FBF965";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 19 0 132 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 19 0 153 0;
+	setAttr -s 3 ".ktl[0:2]" no no no;
 createNode animCurveTL -n "R_Fin_02_Ctrl_translateY";
 	rename -uid "EAE4BC47-4CFF-F828-965E-93802B9AC11A";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 19 0 132 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 19 0 153 0;
+	setAttr -s 3 ".ktl[0:2]" no no no;
 createNode animCurveTL -n "R_Fin_02_Ctrl_translateZ";
 	rename -uid "F8A7002A-48EF-1A36-B4F2-6489C12C9632";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 19 0 132 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 19 0 153 0;
+	setAttr -s 3 ".ktl[0:2]" no no no;
 createNode animCurveTL -n "Anterior_Ctrl_translateX";
 	rename -uid "3FE81AF8-4A83-0842-784D-9386DEFE41A9";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Anterior_Ctrl_translateY";
 	rename -uid "E599A3FE-4594-ABFF-90FE-49982692F710";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Anterior_Ctrl_translateZ";
 	rename -uid "A183C1C6-4DC8-334A-3CCA-ADA9A4E1EAB2";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Head_Ctrl_translateX";
 	rename -uid "ED8C6EA8-40FA-626F-9498-9C9849EF9A28";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Head_Ctrl_translateY";
 	rename -uid "2B6A83B8-4587-2083-ED96-19BAA6002C65";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Head_Ctrl_translateZ";
 	rename -uid "00DC154A-4D35-2F89-2570-639F7975352C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Jaw_Ctrl_translateX";
 	rename -uid "F7AE3DB3-4A74-3A51-11E0-9B8B6E1CBA72";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Jaw_Ctrl_translateY";
 	rename -uid "18B335A9-4393-FDF7-D70D-70B158CF67F5";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Jaw_Ctrl_translateZ";
 	rename -uid "4020C6A0-4809-FE11-839E-00ABD3970401";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Posterior_Ctrl_translateX";
 	rename -uid "2ABC0896-4626-3A52-655C-6D9184D1C7E1";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Posterior_Ctrl_translateY";
 	rename -uid "ADA0A67C-4D2F-5718-6504-8EB2BE733C9F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Posterior_Ctrl_translateZ";
 	rename -uid "E37F1460-4395-F57C-4D20-6E8DC725C26A";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_01_Ctrl_translateX";
 	rename -uid "98CEB04A-464D-7DEB-4908-658745EB3BCA";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_01_Ctrl_translateY";
 	rename -uid "45D5112D-41C0-D21D-7615-D2B93E77ACDC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_01_Ctrl_translateZ";
 	rename -uid "4438D582-47DC-27AE-4015-1BA72BD750A0";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_02_Ctrl_translateX";
 	rename -uid "5A9C6A33-4583-CED0-CAC4-44B5CEA0B11C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_02_Ctrl_translateY";
 	rename -uid "A14CBA3A-41D7-719A-55BF-13AF804725E3";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_02_Ctrl_translateZ";
 	rename -uid "936345C6-469E-0696-1128-D2B9BB975763";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_03_Ctrl_translateX";
 	rename -uid "312F5166-485A-3625-98DD-6EAD8711125F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_03_Ctrl_translateY";
 	rename -uid "7AF4328E-4724-2BCA-DC34-93B923BFFC14";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_03_Ctrl_translateZ";
 	rename -uid "AFB9E9EA-4A75-E661-65E4-9487C1D85FFF";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_04_Ctrl_translateX";
 	rename -uid "A5977531-4408-B3DA-7192-03946C7259DD";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_04_Ctrl_translateY";
 	rename -uid "546C1C89-4C06-2372-9BC2-A08BBA94E51B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Tail_04_Ctrl_translateZ";
 	rename -uid "605D76CC-43AC-7978-1E53-58847E621EF5";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTL -n "Transform_Ctrl_translateX";
 	rename -uid "1D0BA7EF-44BC-D32C-B973-1E854E6543E9";
-	setAttr ".tan" 5;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 -1431.2592248140793 17 -1292.4820914326244
-		 24 -1075.4423078041566 30 -934.12623250614388 35 -852.31612280087575 50 -912.72754755761139
-		 115 -1028.3547653325923 121 -1199.4905377058594 128 -1331.0224396706994 133 -1172.4346063432554
-		 136 -1048.4760181027916 138 -985.52311306881995;
-	setAttr -s 12 ".kit[0:11]"  18 18 18 18 1 1 18 18 
-		18 18 18 1;
-	setAttr -s 12 ".kix[4:11]"  1 1 0.010315752121559697 0.0017896387528785853 
-		1 0.0011797463210350451 0.001114608846528481 0.00081783091801221407;
-	setAttr -s 12 ".kiy[4:11]"  0 0 -0.99994679121349583 -0.99999839859528472 
-		0 0.9999993040990669 0.99999937882336665 0.99999966557623876;
+	setAttr -s 20 ".ktv[0:19]"  1 -1431.2592248140793 17 -1292.4820914326244
+		 24 -1075.4423078041566 30 -934.12623250614388 35 -852.31612280087575 44 -831.75713538914727
+		 50 -852.31612280087575 54 -867.13677772241238 69 -861.54819656100165 84 -856.54092824235477
+		 102 -856.54092824235477 108 -826.06946249532496 125 -1028.3547653325923 140 -1199.4905377058594
+		 145 -1335.3789495917076 147 -1335.3789495917076 149 -1323.9982410205919 152 -1172.4346063432554
+		 155 -1048.4760181027916 157 -985.52311306881995;
+	setAttr -s 20 ".kit[14:19]"  18 1 18 2 2 2;
+	setAttr -s 20 ".kot[9:19]"  5 2 2 2 2 5 5 5 
+		2 2 2;
+	setAttr -s 20 ".ktl[0:19]" no no no no no no no no no no no no no no 
+		yes yes yes no no no;
+	setAttr -s 20 ".kix[15:19]"  1 0.0024407702616206623 0.00082473581314068071 
+		0.0010084007749668164 0.0013237397110805508;
+	setAttr -s 20 ".kiy[15:19]"  0 0.99999702131582868 0.99999965990536144 
+		0.9999994915638093 0.99999912385620493;
 createNode animCurveTL -n "Transform_Ctrl_translateY";
 	rename -uid "4DB477C1-4945-E9A6-4E4F-BDB54F9168A4";
-	setAttr ".tan" 5;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 120.86977875873728 17 120.86977875873728
-		 24 83.359804146866622 30 132.18666966359845 35 132.18666966359845 50 132.18666966359845
-		 115 81.325449637383628 121 83.359804146866622 128 83.359804146866622 133 56.838933595914654
-		 136 102.60825937316181 138 181.19407449029268;
-	setAttr -s 12 ".kit[0:11]"  18 18 18 18 1 1 18 18 
-		18 18 18 1;
-	setAttr -s 12 ".kix[4:11]"  1 1 1 1 1 1 0.0016753070236985592 1;
-	setAttr -s 12 ".kiy[4:11]"  0 0 0 0 0 0 0.99999859667220337 0;
+	setAttr -s 20 ".ktv[0:19]"  1 120.86977875873728 17 120.86977875873728
+		 24 83.359804146866622 30 132.18666966359845 35 132.18666966359845 44 132.18666966359845
+		 50 132.18666966359845 54 132.18666966359845 69 108.46811123481527 84 126.99983804480436
+		 102 126.99983804480436 108 90.251272216716501 125 81.325449637383628 140 83.359804146866622
+		 145 83.248281423180657 147 83.248281423180657 149 72.481431190866331 152 56.838933595914654
+		 155 102.60825937316181 157 181.19407449029268;
+	setAttr -s 20 ".kit[14:19]"  18 1 18 2 2 2;
+	setAttr -s 20 ".kot[9:19]"  5 2 2 2 2 5 5 5 
+		2 2 2;
+	setAttr -s 20 ".ktl[0:19]" no no no no no no no no no no no no no no 
+		yes yes yes no no no;
+	setAttr -s 20 ".kix[15:19]"  1 0.0078883754597575389 0.0079907961229423296 
+		0.0027310765824644129 0.0010604113014048213;
+	setAttr -s 20 ".kiy[15:19]"  0 -0.99996888628227121 -0.99996807307899671 
+		0.99999627060339624 0.99999943776377798;
 createNode animCurveTL -n "Transform_Ctrl_translateZ";
 	rename -uid "13F7F06B-48AE-82EE-B14C-5384FF510FBE";
-	setAttr ".tan" 5;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 -20.594674652830193 17 -42.474591484038577
-		 24 -48.67183355301362 30 -58.457596452568694 35 11.534267699208439 50 -33.612365055300806
-		 115 -50.816887624831196 121 -63.513684544900322 128 41.838982861579872 133 -59.392161595300692
-		 136 110.27344708763052 138 184.35769705482323;
-	setAttr -s 12 ".kit[0:11]"  18 18 18 18 1 1 18 18 
-		18 18 18 1;
-	setAttr -s 12 ".kix[4:11]"  1 1 0.098455856868946867 1 1 1 0.00085470103815389002 
-		1;
-	setAttr -s 12 ".kiy[4:11]"  0 0 -0.99514141922050525 0 0 0 0.99999963474300091 
-		0;
+	setAttr -s 20 ".ktv[0:19]"  1 -20.594674652830193 17 -42.474591484038577
+		 24 -48.67183355301362 30 -58.457596452568694 35 11.534267699208439 44 -0.1291020623461363
+		 50 11.534267699208439 54 32.746163131119879 69 55.31321466325447 84 75.532887406363031
+		 102 75.532887406363031 108 43.433676338205416 125 -50.816887624831196 140 -63.513684544900322
+		 145 78.851301582223542 147 78.851301582223542 149 56.454225412386258 152 -59.392161595300692
+		 155 110.27344708763052 157 184.35769705482323;
+	setAttr -s 20 ".kit[14:19]"  18 1 18 2 2 2;
+	setAttr -s 20 ".kot[9:19]"  5 2 2 2 2 5 5 5 
+		2 2 2;
+	setAttr -s 20 ".ktl[0:19]" no no no no no no no no no no no no no no 
+		yes yes yes no no no;
+	setAttr -s 20 ".kix[15:19]"  1 0.0015070014304952428 0.0010790144644275447 
+		0.00073674309747235917 0.0011248447632310214;
+	setAttr -s 20 ".kiy[15:19]"  0 -0.99999886447269959 -0.99999941786372337 
+		0.99999972860476738 0.99999936736192929;
 createNode animCurveTU -n "L_Fin_01_Ctrl_visibility";
 	rename -uid "D2842FF2-40C4-D67B-5398-28B74DBC325F";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "L_Fin_01_Ctrl_rotateX";
 	rename -uid "C4B05E1F-4D8C-98F6-5E50-F4B424BA060B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "L_Fin_01_Ctrl_rotateY";
 	rename -uid "64902CBE-4D15-9783-CDDF-33BDAB360D84";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 98 -14.996967971524164 105 -66.538284466484356;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 94 -9.9862678884965401 100 -14.996967971524164
+		 107 -66.538284466484356;
+	setAttr -s 5 ".kot[1:4]"  5 2 2 2;
+	setAttr -s 5 ".ktl[0:4]" no no no no no;
 createNode animCurveTA -n "L_Fin_01_Ctrl_rotateZ";
 	rename -uid "91DC35DE-4DE8-86B7-B69A-21AC0F01F780";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTU -n "L_Fin_01_Ctrl_scaleX";
 	rename -uid "4772B8C7-45D0-7AA7-8CA4-828DC2CCE31E";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_01_Ctrl_scaleY";
 	rename -uid "F76FC2A5-4BC8-5F61-8EF9-BAB3B42A43CA";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_01_Ctrl_scaleZ";
 	rename -uid "0157BE8C-48B1-7790-7D52-5E9B9538EC9E";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_01_Ctrl_FollowTranslate";
 	rename -uid "FBA96E53-4009-E111-17DC-3592517C7511";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_01_Ctrl_FollowRotate";
 	rename -uid "EFC3571B-402D-2FE9-EA6D-A3968D4EB526";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_02_Ctrl_visibility";
 	rename -uid "DB0E79B3-4851-2871-EAAF-DABBB3AF3628";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Tail_02_Ctrl_rotateX";
 	rename -uid "99A7E496-499D-8550-D2EF-7190B2B4F5BB";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_02_Ctrl_rotateY";
 	rename -uid "4C164864-4118-7010-33B3-9295816154C7";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_02_Ctrl_rotateZ";
 	rename -uid "D41A1C40-4C3B-B8DA-4A5F-21952B32E413";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 30 -4.8620145040261882 35 0 50 0 115 -12.589347587058333
-		 121 10.8453043508718 133 -8.9094977374246085 136 -7.7755424786763063;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
+	setAttr -s 15 ".ktv[0:14]"  1 0 24 15.294655022113789 30 -10.735590708173856
+		 35 10.490761133292676 41 0 46 8.39689137943612 52 -3.0613704738031404 57 -8.8828709978913984
+		 94 0 136 -12.589347587058333 142 10.8453043508718 154 -8.9094977374246085 156 13.197106529480997
+		 157 -9.6337283677643057 159 12.033410665104382;
+	setAttr -s 15 ".kot[3:14]"  5 2 2 2 2 2 2 2 
+		2 2 2 2;
+	setAttr -s 15 ".ktl[0:14]" no no no no no no no no no no no no no no 
+		no;
 createNode animCurveTU -n "Tail_02_Ctrl_scaleX";
 	rename -uid "C1B01D4A-4DCC-C733-38F3-0B8AB4A9A9F8";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_02_Ctrl_scaleY";
 	rename -uid "6717E6C5-498C-162B-83A9-F4A77B9E249F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_02_Ctrl_scaleZ";
 	rename -uid "95569D54-4856-388C-F912-0799FC34E122";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_02_Ctrl_FollowTranslate";
 	rename -uid "F7917EDB-48EC-AEBC-F4FD-738C8BAC3039";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_02_Ctrl_FollowRotate";
 	rename -uid "7649A8EF-4790-0491-B50A-A4BD46052205";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Jaw_Ctrl_visibility";
 	rename -uid "AAFCD2DD-4E32-02B1-F5B5-00846465A46E";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Jaw_Ctrl_rotateX";
 	rename -uid "4A4DBA27-458D-5EDE-95F6-2A8D7A7BE865";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "Jaw_Ctrl_rotateY";
 	rename -uid "3487FB0A-428F-6043-E4DA-BE80EB73CCCC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "Jaw_Ctrl_rotateZ";
 	rename -uid "E308B3FB-41F0-B0C2-99B6-C3981BCBB035";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 17 -21.503854640484395 24 -25.765454522622086
-		 35 -18.707880309548184 98 0.6196615095992396 105 55.141916045160656 112 -24.601115872118214
-		 138 -25.388340616919258;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
+	setAttr -s 11 ".ktv[0:10]"  1 0 17 -21.503854640484395 24 -16.77910853616854
+		 35 -7.1918787629446443 46 -17.919516712135533 56 -3.6882590093656744 88 -16.175738465869077
+		 100 0.6196615095992396 107 55.141916045160656 133 -24.601115872118214 159 -25.388340616919258;
+	setAttr -s 11 ".kot[3:10]"  5 2 2 2 2 2 2 2;
+	setAttr -s 11 ".ktl[0:10]" no no no no no no no no no no no;
 createNode animCurveTU -n "Jaw_Ctrl_scaleX";
 	rename -uid "5F81C80E-41FB-E6B0-3206-08BF085F4E6F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Jaw_Ctrl_scaleY";
 	rename -uid "96925B3D-4F95-8CC2-99A3-5092B8E11806";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Jaw_Ctrl_scaleZ";
 	rename -uid "2DC9168F-4D23-D959-F5C6-99A28D0C4173";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Jaw_Ctrl_FollowTranslate";
 	rename -uid "1FF0808D-4A8A-3C82-8BC9-149613F97DB0";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Jaw_Ctrl_FollowRotate";
 	rename -uid "67DE5C8F-4D71-6178-AE90-74A52EDDCF09";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "_COG_Ctrl_visibility";
 	rename -uid "A368A6FB-4B0D-7653-A84D-7EAE2AAE250D";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "_COG_Ctrl_rotateX";
 	rename -uid "9BC767C0-43EC-2D62-7276-4DAF0145F409";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 105 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 107 0;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "_COG_Ctrl_rotateY";
 	rename -uid "EB070577-47ED-6D81-6BF7-98B102C5192F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 105 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 107 0;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "_COG_Ctrl_rotateZ";
 	rename -uid "EA28BA8C-4C4A-4881-7246-FB92478A80FE";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 105 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 107 0;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTU -n "_COG_Ctrl_scaleX";
 	rename -uid "5C2BCA9A-4060-7283-54BE-47B2C6EAAD97";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "_COG_Ctrl_scaleY";
 	rename -uid "C3D806DA-4AC8-8B34-5F01-74A5C90452C1";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "_COG_Ctrl_scaleZ";
 	rename -uid "D1052221-4976-D4F7-96B8-26926B9519C6";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "_COG_Ctrl_FollowTranslate";
 	rename -uid "BCCA9940-4AEF-26CF-9DE8-258D5EC1DAF4";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "_COG_Ctrl_FollowRotate";
 	rename -uid "66D79795-468D-4151-A469-45BE1A5E2C6A";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_02_Ctrl_visibility";
 	rename -uid "8E130DAF-4632-CE8A-A51E-91B09244C19C";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "R_Fin_02_Ctrl_rotateX";
 	rename -uid "A2EE4239-4941-1988-3FBC-1299AD69C026";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 98 -8.8117112329608531 138 0;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 94 -1.047797 100 -8.8117112329608531
+		 159 0;
+	setAttr -s 5 ".kot[1:4]"  5 2 2 2;
+	setAttr -s 5 ".ktl[0:4]" no no no no no;
 createNode animCurveTA -n "R_Fin_02_Ctrl_rotateY";
 	rename -uid "A0AEE054-494D-9773-DB13-098BB43A9590";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 98 13.989328449846029 138 0;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 94 -1.047797 100 13.989328449846029
+		 159 0;
+	setAttr -s 5 ".kot[1:4]"  5 2 2 2;
+	setAttr -s 5 ".ktl[0:4]" no no no no no;
 createNode animCurveTA -n "R_Fin_02_Ctrl_rotateZ";
 	rename -uid "A8C97324-4751-593E-0AE5-DA903C592AFD";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 98 0 138 0;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 94 -1.047797 100 0 159 0;
+	setAttr -s 5 ".kot[1:4]"  5 2 2 2;
+	setAttr -s 5 ".ktl[0:4]" no no no no no;
 createNode animCurveTU -n "R_Fin_02_Ctrl_scaleX";
 	rename -uid "06271129-48C8-6A49-8760-1EB030CD6B65";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_02_Ctrl_scaleY";
 	rename -uid "39223DE4-44AB-08FA-24AF-93922E1788C2";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_02_Ctrl_scaleZ";
 	rename -uid "359104D4-45D1-037A-F12A-5BBAAB8DFFAC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_02_Ctrl_FollowTranslate";
 	rename -uid "069E5453-4D42-C0ED-8AFE-D680C7DB372C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_02_Ctrl_FollowRotate";
 	rename -uid "2F79BAA5-49F0-AE2B-12F0-379469C39018";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_04_Ctrl_visibility";
 	rename -uid "9E4D1A58-4DEA-74B4-6F11-D2AF72C3456B";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Tail_04_Ctrl_rotateX";
 	rename -uid "2E5DD056-43C2-84A7-F50B-82A82611F1D5";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_04_Ctrl_rotateY";
 	rename -uid "6C618EDD-4270-0C22-D16C-278F5082389B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_04_Ctrl_rotateZ";
 	rename -uid "09431870-470D-084E-4015-288699136B5F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 30 -4.8620145040261882 35 0 50 0 115 -12.589347587058333
-		 121 10.8453043508718 133 -8.9094977374246085 136 -7.7755424786763063;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
+	setAttr -s 15 ".ktv[0:14]"  1 0 24 15.294655022113789 30 -10.735590708173856
+		 35 10.490761133292676 41 0 46 8.39689137943612 52 -3.0613704738031404 57 -8.8828709978913984
+		 94 0 136 -12.589347587058333 142 10.8453043508718 154 -8.9094977374246085 156 13.197106529480997
+		 157 -9.6337283677643057 159 12.033410665104382;
+	setAttr -s 15 ".kot[3:14]"  5 2 2 2 2 2 2 2 
+		2 2 2 2;
+	setAttr -s 15 ".ktl[0:14]" no no no no no no no no no no no no no no 
+		no;
 createNode animCurveTU -n "Tail_04_Ctrl_scaleX";
 	rename -uid "1256B66B-48DA-E404-E505-D9B5497CD047";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_04_Ctrl_scaleY";
 	rename -uid "E11FCFAE-466B-55E8-1F22-6DBA4B2AA134";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_04_Ctrl_scaleZ";
 	rename -uid "F5367F39-41E9-360B-D3D9-93932258E258";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_04_Ctrl_FollowTranslate";
 	rename -uid "B837F0EF-48C2-F006-1100-DDBE8017AB90";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_04_Ctrl_FollowRotate";
 	rename -uid "15ABF9B7-46FB-0F95-8257-25BBE4A1CC79";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Anterior_Ctrl_visibility";
 	rename -uid "A3137ECA-4945-8692-1C87-09BE1BB82E3A";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Anterior_Ctrl_rotateX";
 	rename -uid "0A409FC9-4785-CF46-4FBC-1B9B1F6E5A01";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "Anterior_Ctrl_rotateY";
 	rename -uid "9CCFA1BD-4C04-BCB1-5D3C-62AF1D31B499";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "Anterior_Ctrl_rotateZ";
 	rename -uid "232227CB-449F-A816-7657-12BA915D638B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTU -n "Anterior_Ctrl_scaleX";
 	rename -uid "7D2C29E0-41F2-7E57-B7F8-1F9B8A9F4F41";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Anterior_Ctrl_scaleY";
 	rename -uid "FA729C1B-4934-A4D4-55E1-7E9A82B24C47";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Anterior_Ctrl_scaleZ";
 	rename -uid "F7411D69-418D-7527-9B2B-51BA30947F50";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Anterior_Ctrl_FollowTranslate";
 	rename -uid "C7627529-42D0-5EDD-0DA4-B7949720DA2F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Anterior_Ctrl_FollowRotate";
 	rename -uid "5D8D53B5-4883-4146-C2A6-6988BA24496B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_02_Ctrl_visibility";
 	rename -uid "D2F7F551-41E5-D868-6839-E3947920B31C";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "L_Fin_02_Ctrl_rotateX";
 	rename -uid "3F7562B9-411F-B88D-DD1B-7A8F3FECFB7E";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "L_Fin_02_Ctrl_rotateY";
 	rename -uid "6EC730DA-43F0-E6BA-6F7B-728DFB82519A";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 35 0 98 -14.996967971524164;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 -9.9862678884965401 100 -14.996967971524164;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "L_Fin_02_Ctrl_rotateZ";
 	rename -uid "032F116D-4965-CDFF-25CE-F6AAFABFFA31";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTU -n "L_Fin_02_Ctrl_scaleX";
 	rename -uid "B619692F-4D28-B291-8212-0C9773846C61";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_02_Ctrl_scaleY";
 	rename -uid "9B52E6C4-4C4F-7AC3-6A31-098A3EB270D7";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_02_Ctrl_scaleZ";
 	rename -uid "A47263D7-4113-DDC4-D78F-E99B70AA345F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_02_Ctrl_FollowTranslate";
 	rename -uid "02A8FC50-49C0-698C-FC71-E7B0C4FA433B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Fin_02_Ctrl_FollowRotate";
 	rename -uid "CB9EB6FA-47D9-4D57-EC2D-B290784F02C9";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_01_Ctrl_visibility";
 	rename -uid "0A984232-477B-7E60-E356-9A950A929C44";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Tail_01_Ctrl_rotateX";
 	rename -uid "40E44004-4AB9-8512-AFAE-09BC5CA75DF7";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_01_Ctrl_rotateY";
 	rename -uid "50FB7A61-4252-9DCB-DE1C-58B82F80E327";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_01_Ctrl_rotateZ";
 	rename -uid "6453DEF3-474B-FFE9-DEB2-BB9372F113B8";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 30 -4.8620145040261882 35 0 115 -12.589347587058333
-		 121 10.8453043508718 133 -8.9094977374246085 136 -7.7755424786763063;
-	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+	setAttr -s 14 ".ktv[0:13]"  1 0 24 15.294655022113789 30 -10.735590708173856
+		 35 10.490761133292676 46 17.452058052302849 52 5.9937961990636017 57 0.17229567497534617
+		 94 0 136 -12.589347587058333 142 10.8453043508718 154 -8.9094977374246085 156 13.197106529480997
+		 157 -9.6337283677643057 159 12.033410665104382;
+	setAttr -s 14 ".kot[3:13]"  5 2 2 2 2 2 2 2 
+		2 2 2;
+	setAttr -s 14 ".ktl[0:13]" no no no no no no no no no no no no no no;
 createNode animCurveTU -n "Tail_01_Ctrl_scaleX";
 	rename -uid "1D4DC2AA-4736-D099-618A-47BBCB63B987";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_01_Ctrl_scaleY";
 	rename -uid "3936AFF6-4346-1A06-67D8-16A5340AB8CC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_01_Ctrl_scaleZ";
 	rename -uid "E5502273-4AFE-6FFF-93EB-ADAF9A633981";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_01_Ctrl_FollowTranslate";
 	rename -uid "350D260F-4A2B-97F1-2C8F-D0B2CDFBC55E";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_01_Ctrl_FollowRotate";
 	rename -uid "E5BDB45D-4DB5-60CB-36D7-B2B9FA10C8A0";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_01_Ctrl_visibility";
 	rename -uid "FA4D300D-4F76-C8CB-8A67-B398AA792687";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "R_Fin_01_Ctrl_rotateX";
 	rename -uid "F80004CA-46CD-0C01-CDE1-F6AAF8146CC4";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 98 -8.8117112329608531 138 0;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 94 -1.047797 100 -8.8117112329608531
+		 159 0;
+	setAttr -s 5 ".kot[1:4]"  5 2 2 2;
+	setAttr -s 5 ".ktl[0:4]" no no no no no;
 createNode animCurveTA -n "R_Fin_01_Ctrl_rotateY";
 	rename -uid "93912472-4705-BE85-0065-4EB9E1C8AE8C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 98 13.989328449846029 105 53.312185760293133
-		 138 0;
-	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
+	setAttr -s 6 ".ktv[0:5]"  1 0 35 0 94 -1.047797 100 13.989328449846029
+		 107 53.312185760293133 159 0;
+	setAttr -s 6 ".kot[1:5]"  5 2 2 2 2;
+	setAttr -s 6 ".ktl[0:5]" no no no no no no;
 createNode animCurveTA -n "R_Fin_01_Ctrl_rotateZ";
 	rename -uid "A2B24FE5-4D3A-C998-C648-C1929A7BB096";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 98 -5.8580062999463465 138 0;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 0 35 0 94 -1.047797 100 -5.8580062999463465
+		 159 0;
+	setAttr -s 5 ".kot[1:4]"  5 2 2 2;
+	setAttr -s 5 ".ktl[0:4]" no no no no no;
 createNode animCurveTU -n "R_Fin_01_Ctrl_scaleX";
 	rename -uid "4D31D59D-40F5-D3B9-3E08-56BF9F74647C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_01_Ctrl_scaleY";
 	rename -uid "53ACD687-4E8C-604C-AE90-BB9F9D273BAD";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_01_Ctrl_scaleZ";
 	rename -uid "5320B3FB-4C1B-B9AB-C284-87B083E69173";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_01_Ctrl_FollowTranslate";
 	rename -uid "64DECFB9-4AD8-D165-5FAC-0F9715A84EE8";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Fin_01_Ctrl_FollowRotate";
 	rename -uid "2038D0FB-45E3-A503-A00A-D29E4291A008";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Posterior_Ctrl_visibility";
 	rename -uid "CC0CBD2A-4155-E1E1-3553-058764B2AD87";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Posterior_Ctrl_rotateX";
 	rename -uid "67A4BCD0-42C7-88FE-95A4-1CADA0C9FF36";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "Posterior_Ctrl_rotateY";
 	rename -uid "6B56CE78-46FD-BEF4-ABD0-47A283074C6D";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTA -n "Posterior_Ctrl_rotateZ";
 	rename -uid "C3022CDC-4E37-881B-7EDA-A5BBE94F6760";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 2 ".kot[1]"  5;
+	setAttr -s 2 ".ktl[0:1]" no no;
 createNode animCurveTU -n "Posterior_Ctrl_scaleX";
 	rename -uid "E2C3E868-404B-FB41-79F1-C29D0E107B26";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Posterior_Ctrl_scaleY";
 	rename -uid "D9E02BCF-48F7-AAFE-2BB6-99B5002898AC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Posterior_Ctrl_scaleZ";
 	rename -uid "AA957E2B-4ABC-2B75-75BD-A6871737DFD2";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Posterior_Ctrl_FollowTranslate";
 	rename -uid "4D04F9DA-41E8-9EBE-5AC6-0BBA8961D352";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Posterior_Ctrl_FollowRotate";
 	rename -uid "0B24F623-42B9-26FC-CB1E-46AB9BD75F2C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_03_Ctrl_visibility";
 	rename -uid "BA2A3296-4055-2A91-D427-7A8B5E52B10E";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Tail_03_Ctrl_rotateX";
 	rename -uid "9EAB9B17-47EA-50BA-1037-11A76CE8A8D5";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_03_Ctrl_rotateY";
 	rename -uid "66E4DB24-4177-2FD5-983C-4B88295EDCB2";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 35 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 94 0 156 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Tail_03_Ctrl_rotateZ";
 	rename -uid "03B5F5D1-424E-F8F4-282D-4586F5389CD2";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0 30 -4.8620145040261882 35 0 50 0 115 -12.589347587058333
-		 121 10.8453043508718 133 -8.9094977374246085 136 -7.7755424786763063;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
+	setAttr -s 15 ".ktv[0:14]"  1 0 24 15.294655022113789 30 -10.735590708173856
+		 35 10.490761133292676 41 0 46 8.39689137943612 52 -3.0613704738031404 57 -8.8828709978913984
+		 94 0 136 -12.589347587058333 142 10.8453043508718 154 -8.9094977374246085 156 13.197106529480997
+		 157 -9.6337283677643057 159 12.033410665104382;
+	setAttr -s 15 ".kot[3:14]"  5 2 2 2 2 2 2 2 
+		2 2 2 2;
+	setAttr -s 15 ".ktl[0:14]" no no no no no no no no no no no no no no 
+		no;
 createNode animCurveTU -n "Tail_03_Ctrl_scaleX";
 	rename -uid "E0E73E5B-404B-7626-1F3F-8ABF57252570";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_03_Ctrl_scaleY";
 	rename -uid "A65CF0C6-4348-0B69-241A-A982CB8491D7";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_03_Ctrl_scaleZ";
 	rename -uid "5E6236F1-401D-CE64-C366-2BA03E245C30";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_03_Ctrl_FollowTranslate";
 	rename -uid "B1593176-45E0-DD08-F07B-AE96FC91E728";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Tail_03_Ctrl_FollowRotate";
 	rename -uid "4AD43038-4EFB-6EBE-F510-099D03F54F14";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Transform_Ctrl_visibility";
 	rename -uid "79B31228-4604-4638-FE80-98B1EBEFDD64";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Transform_Ctrl_rotateX";
 	rename -uid "50C19B8E-4408-84C4-8AB4-308E011BA79F";
-	setAttr ".tan" 5;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 11 ".ktv[0:10]"  1 0 24 0 30 0 35 0 50 0 115 0 121 0 128 0
-		 133 0 136 0 138 0;
-	setAttr -s 11 ".kit[0:10]"  18 18 18 1 1 18 18 18 
-		18 18 1;
-	setAttr -s 11 ".kix[3:10]"  1 1 1 1 1 1 1 1;
-	setAttr -s 11 ".kiy[3:10]"  0 0 0 0 0 0 0 0;
+	setAttr -s 11 ".ktv[0:10]"  1 0 24 0 30 0 35 0 50 0 134 0 140 0 147 0
+		 152 0 155 0 157 0;
+	setAttr -s 11 ".ktl[0:10]" no no no no no no no no no no no;
 createNode animCurveTA -n "Transform_Ctrl_rotateY";
 	rename -uid "A8EC570F-428A-D9DB-D729-B8B76E50AEEB";
-	setAttr ".tan" 5;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 11 ".ktv[0:10]"  1 0 24 -24.047049011943777 30 -45.897092608661033
-		 35 -76.090908016287571 50 -76.090908016287571 115 -200.13550331555678 121 -174.20803732532758
-		 128 -130.23972492480928 133 -17.112995765224415 136 -60.000257899018784 138 -60.000257899018784;
-	setAttr -s 11 ".kit[0:10]"  18 18 18 1 1 18 18 18 
-		18 18 1;
-	setAttr -s 11 ".kix[3:10]"  1 1 1 0.4058154917681191 0.17940161459020523 
-		1 1 0.17851849398940994;
-	setAttr -s 11 ".kiy[3:10]"  0 0 0 0.91395502440820342 0.98377591995455316 
-		0 0 -0.98393655654404522;
+	setAttr -s 13 ".ktv[0:12]"  1 0 24 -24.047049011943777 30 -45.897092608661033
+		 35 -76.090908016287571 52 -76.090908016287571 118 -76.090908016287571 136 -200.13550331555678
+		 140 -163.88131314712228 142 -174.20803732532758 149 -130.23972492480928 154 -17.112995765224415
+		 157 -60.000257899018784 159 -60.000257899018784;
+	setAttr -s 13 ".kit[7:12]"  18 2 2 2 2 2;
+	setAttr -s 13 ".kot[3:12]"  5 5 2 2 5 2 2 2 
+		2 2;
+	setAttr -s 13 ".ktl[0:12]" no no no no no no no yes no no no no no;
 createNode animCurveTA -n "Transform_Ctrl_rotateZ";
 	rename -uid "A15A25A6-4714-CBF3-6E88-2389AB03EF76";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 24 0 35 0 50 0 115 0 121 0 133 0.36567755620482995
-		 136 0.3656775562048295 138 0;
-	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
-		5;
+	setAttr -s 9 ".ktv[0:8]"  1 0 24 0 35 0 50 0 134 0 140 0 152 0.36567755620482995
+		 155 0.3656775562048295 157 0;
+	setAttr -s 9 ".ktl[0:8]" no no no no no no no no no;
 createNode animCurveTU -n "Transform_Ctrl_scaleX";
 	rename -uid "DCB46735-4B3B-1C43-EA8C-359EE6947AF6";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 29.233313344197256;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Transform_Ctrl_scaleY";
 	rename -uid "04906DB3-4B4A-BFE3-E3E5-0EB291DB8F9B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 29.233313344197256;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Transform_Ctrl_scaleZ";
 	rename -uid "5BF48944-478D-CDEB-B2BF-89A1CAC31C23";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 29.233313344197256;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Head_Ctrl_visibility";
 	rename -uid "0EB41CCA-4875-797C-6907-09B987AE0DD7";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "Head_Ctrl_rotateX";
 	rename -uid "B025D2C9-4726-DAE7-E725-0C9BB1017ED3";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 105 0 138 0;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 107 0 159 0;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTA -n "Head_Ctrl_rotateY";
 	rename -uid "5861AAED-4CE9-6329-8389-6192A5061F08";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr -s 6 ".ktv[0:5]"  1 0 24 27.595875883875216 30 10.553235173610091
-		 35 0 105 0 138 11.903136963468919;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+		 35 0 107 0 159 11.903136963468919;
+	setAttr -s 6 ".kot[3:5]"  5 2 2;
+	setAttr -s 6 ".ktl[0:5]" no no no no no no;
 createNode animCurveTA -n "Head_Ctrl_rotateZ";
 	rename -uid "14F15B1A-4CD1-B399-FB64-4086FCF7D303";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 105 0 138 13.434176711026705;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".ktv[0:3]"  1 0 35 0 107 0 159 13.434176711026705;
+	setAttr -s 4 ".kot[1:3]"  5 2 2;
+	setAttr -s 4 ".ktl[0:3]" no no no no;
 createNode animCurveTU -n "Head_Ctrl_scaleX";
 	rename -uid "C8A4CB7D-4441-4B46-548E-EDB84FC7C740";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Head_Ctrl_scaleY";
 	rename -uid "EE31FD7F-4C4B-B779-E617-07B4994F14A6";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Head_Ctrl_scaleZ";
 	rename -uid "3931D354-477C-3FB6-2F31-EBB9D716EB3C";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Head_Ctrl_FollowTranslate";
 	rename -uid "33AE9431-4EAA-F24A-F281-FAAF7874212D";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "Head_Ctrl_FollowRotate";
 	rename -uid "7110AB2F-4245-C5D6-6A44-A08609534B64";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode displayLayer -n "Doors";
 	rename -uid "E247265E-4506-05C2-B08F-78930214DEE4";
 	setAttr ".ufem" -type "stringArray" 0  ;
@@ -7484,12 +7585,21 @@ createNode reference -n "Colt_Navy_RevolverRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Colt_Navy_RevolverRN"
 		"Colt_Navy_RevolverRN" 0
-		"Colt_Navy_RevolverRN" 5
+		"Colt_Navy_RevolverRN" 10
 		0 "|Colt_Navy_Revolver:pCube1" "|gun" "-s -r "
 		0 "|Colt_Navy_Revolver:polySurface3" "|gun" "-s -r "
 		0 "|Colt_Navy_Revolver:Pre_Boolean1" "|gun" "-s -r "
 		0 "|Colt_Navy_Revolver:Pre_Boolean" "|gun" "-s -r "
-		0 "|Colt_Navy_Revolver:Removal_Rod_01" "|gun" "-s -r ";
+		0 "|Colt_Navy_Revolver:Removal_Rod_01" "|gun" "-s -r "
+		2 "|gun|Colt_Navy_Revolver:Removal_Rod_01" "translate" " -type \"double3\" 0 2.7094859073865027e-10 0"
+		
+		2 "|gun|Colt_Navy_Revolver:Pre_Boolean1|Colt_Navy_Revolver:Removal_Rod_02" 
+		"translate" " -type \"double3\" 0 2.7094859073865027e-10 0"
+		2 "|gun|Colt_Navy_Revolver:Pre_Boolean1|Colt_Navy_Revolver:Wheel" "translate" 
+		" -type \"double3\" 0 2.7094859073865027e-10 0"
+		2 "|gun|Colt_Navy_Revolver:polySurface3" "translate" " -type \"double3\" 0 2.7094859073865027e-10 0"
+		
+		2 "|gun|Colt_Navy_Revolver:pCube1" "translate" " -type \"double3\" 0 2.7094859073865027e-10 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTL -n "gun_translateX";
@@ -7558,7 +7668,7 @@ createNode animCurveTU -n "gun_parentConstraint1__COG_CtrlW0";
 	rename -uid "C5DCD20B-4ACC-1160-238F-74957CBDE1CF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 128 1;
+	setAttr -s 2 ".ktv[0:1]"  1 0 149 1;
 	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode reference -n "sharedReferenceNode";
 	rename -uid "B954A2F3-4487-56D8-E4BA-92BC2FF5891A";
@@ -7566,139 +7676,168 @@ createNode reference -n "sharedReferenceNode";
 		"sharedReferenceNode";
 createNode animCurveTA -n "L_Door_rotateX1";
 	rename -uid "98E4A1E1-4497-409F-F74E-7FA8533625C9";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "L_Door_rotateY1";
 	rename -uid "654BEBB2-4388-EB01-BA33-1A869ECA0A4F";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "L_Door_rotateZ1";
 	rename -uid "F1A8E0D6-4351-9684-A7A5-8BAE0F9356E8";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Door_scaleX1";
 	rename -uid "1B6102B8-4BF3-8782-DD05-CA898A3637FA";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Door_scaleY1";
 	rename -uid "5BC42B53-43CA-5D92-2BB4-5889696136EC";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Door_scaleZ1";
 	rename -uid "D6333E58-45A6-7F0B-CB48-72B146DE7838";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTL -n "L_Door_translateX1";
 	rename -uid "3AB43C30-49CB-B678-4216-1BB7A7D5E3E4";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 -1199.9359243046758;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTL -n "L_Door_translateY1";
 	rename -uid "5D318737-4454-791A-81B9-1EA30668CCD2";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTL -n "L_Door_translateZ1";
 	rename -uid "05C3577D-4E52-CF84-68B7-33AABA83E803";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 -363.52038353254432;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "L_Door_visibility1";
 	rename -uid "E6139436-433E-E5EC-3C09-F1944ED192EF";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "R_Door_rotateX1";
 	rename -uid "55DA9B20-4E69-FCF3-0B9F-08A7F1231257";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTA -n "R_Door_rotateY1";
 	rename -uid "C647E2C2-48C5-5075-5F09-75BF2D680F75";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 0 17 42.795394876460286 24 146.94689666038539
-		 30 77.722634795746757 36 -17.399103979770743 47 14.429787054705212 51 0 121 -124.19616210623018
-		 128 17.309417072587717 133 88.984950294371018 135 144.04246152411272 171 -34.475131283475669
-		 178 27.355478174225848 183 -19.29052121778 190 0;
-	setAttr -s 15 ".kot[0:14]"  5 5 5 5 5 5 5 5 
-		5 5 5 5 5 5 5;
+	setAttr -s 17 ".ktv[0:16]"  1 0 17 42.795394876460286 24 146.94689666038539
+		 30 77.722634795746757 38 -17.399103979770743 42 0 49 14.429787054705212 53 0 128 -27.29739866753485
+		 139 -124.19616210623018 147 -41.202808466361731 154 88.984950294371018 156 144.04246152411272
+		 173 -34.475131283475669 180 27.355478174225848 185 -19.29052121778 192 0;
+	setAttr -s 17 ".kit[1:16]"  1 2 2 1 2 2 2 2 
+		1 1 2 1 1 1 1 2;
+	setAttr -s 17 ".kot[2:16]"  1 2 2 1 2 5 2 1 
+		2 2 2 2 2 2 2;
+	setAttr -s 17 ".ktl[0:16]" no no no no no no no no yes no no no no 
+		no no no no;
+	setAttr -s 17 ".kix[1:16]"  0.33674768612097755 0.15842519631337895 
+		0.20262844552228587 0.56014958296973216 0.48113675248399512 0.75688288239984214 0.55187384582421317 
+		0.98857711292536976 0.35185448082543047 0.13979000562262972 0.12731820254676393 0.069552736912493002 
+		0.050546879642241756 0.05257734106513326 0.062849536640869202 0.65476980983847333;
+	setAttr -s 17 ".kiy[1:16]"  0.94159492133940892 0.98737098254560196 
+		-0.9792556934045481 0.82839148033935939 0.876645552894187 0.65355053540648778 -0.83392760974511004 
+		-0.15071593081071716 -0.9360547122487376 0.99018117247704984 0.99186192350561642 
+		-0.99757827602047433 -0.99872168944027284 0.99861685505829545 -0.99802301363446932 
+		0.75582835096607037;
+	setAttr -s 17 ".kox[2:16]"  0.34844640124779785 0.19685190493942911 
+		0.48113675248399512 0.26210166210634822 0.55187384582421317 0 0.26157462963314276 
+		0.12389091063063476 0.12731820254676393 0.086396839097578157 0.22168514699744596 
+		0.26091329555381404 0.24790972513609491 0.65476980983847333 1;
+	setAttr -s 17 ".koy[2:16]"  -0.93732870726200357 -0.98043323460688425 
+		0.876645552894187 0.9650402679272454 -0.83392760974511004 0 -0.96518325365304813 
+		-0.99229584412266492 0.99186192350561642 0.99626080229724345 -0.9751182982596116 
+		0.96536223885298511 -0.96878313785023429 0.75582835096607037 0;
 createNode animCurveTA -n "R_Door_rotateZ1";
 	rename -uid "A9A5591B-420D-9F43-D3BF-39A8FD6EC634";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Door_scaleX1";
 	rename -uid "81EFA67D-40EA-DAFF-5C81-C88EA0F4AD64";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Door_scaleY1";
 	rename -uid "DF5D3769-49F7-A9D1-D153-828ACB033A7B";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Door_scaleZ1";
 	rename -uid "0FB254A4-466E-FDC2-B157-0FAB5060E424";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTL -n "R_Door_translateX1";
 	rename -uid "9C251B61-431E-CDFE-A8D2-AEB3F1857FAF";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 -1199.9359243046758;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTL -n "R_Door_translateY1";
 	rename -uid "25E4CB86-467A-6600-85B5-E1AB72DF60E0";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTL -n "R_Door_translateZ1";
 	rename -uid "6FB48195-4B59-7EBC-7B67-1098AD75BB0E";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 -363.52038353254432;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode animCurveTU -n "R_Door_visibility1";
 	rename -uid "3B1F6797-4FA5-5615-3C7B-2080EC8E4CB4";
-	setAttr ".tan" 9;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktl[0]" no;
 createNode reference -n "Diver_AnimationRN";
 	rename -uid "1ABFD37C-43B8-097C-DBFF-26AE54E74511";
+	setAttr ".fn[0]" -type "string" "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/Fishism//scenes/Diver_Animation_Scene/Diver_Animation.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Diver_AnimationRN"
 		"Diver_AnimationRN" 0
-		"Diver_Animation:Female_Deep_Sea_Diver_RiggedRN" 0;
+		"Diver_Animation:Female_Deep_Sea_Diver_RiggedRN" 0
+		"Diver_AnimationRN" 4
+		2 "|Diver_Animation:Main_Scene:Desk_Model:Table_Model" "visibility" " 0"
+		2 "|Diver_Animation:Main_Scene:Cash_Register:Cash_Register" "visibility" 
+		" 0"
+		2 "|Diver_Animation:Main_Scene:Chair_Model:polySurface57" "visibility" " 0"
+		
+		2 "|Diver_Animation:group1" "visibility" " 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
-	setAttr ".o" 21;
-	setAttr ".unw" 21;
+	setAttr ".o" 199;
+	setAttr ".unw" 199;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -8433,5 +8572,6 @@ connectAttr "gun_parentConstraint1.ctz" "pairBlend1.itz2";
 connectAttr "gun_parentConstraint1.crx" "pairBlend1.irx2";
 connectAttr "gun_parentConstraint1.cry" "pairBlend1.iry2";
 connectAttr "gun_parentConstraint1.crz" "pairBlend1.irz2";
+connectAttr "sharedReferenceNode.sr" "Diver_AnimationRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 // End of Fish_animation.ma
